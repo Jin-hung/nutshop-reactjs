@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    background-color: #F7F3E9;
+}
+
+nav {
+    padding: 0px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+nav .logo {
+    font-size: 50px;
+    font-weight: 700;
+    color: #dda15e;
+}
+
+nav .link a:not(:last-child)::after {
+    content: "|";
+    border: none;
+    padding: 8px 14px
+}
+
+nav .login button.signup {
+
+    font-size: 18px;
+    background-color: #8B5E3C;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+
+}
+
+
+nav .login button {
+    cursor: pointer;
+    background-color: #F7F3E9;
+    font-size: 18px;
+    color: black;
+    margin-left: 20px;
+    border: none;
+}
+
+header {
+    padding: 0px 100px;
+    display: flex;
+    height: calc(100vh - 80px);
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+header .left {
+    width: 700px;
+}
+
+header .left span {
+    color: #dda15e;
+}
+
+header .left h1 {
+    font-size: 80px;
+}
+
+header .left p {
+    font-size: 20px;
+    margin: 40px 0px;
+    color: #8B5E3C;
+}
+
+header .left a {
+    display: flex;
+    border-radius: 60px;
+    background-color: #8B5E3C;
+    align-items: center;
+    padding: 10px 20px;
+
+    width: 200px;
+}
+
+header .left a i {
+    font-size: 25px;
+    border-radius: 50%;
+    padding: 8px;
+    background-color: white;
+}
+
+header .left a span {
+    font-weight: bold;
+    margin-left: 20px;
+    color: white;
+}
+
+img {
+    display: flex;
+    width: 800px;
+    height: 600px;
+    border-radius: 80px;
+}
+
+h2.seperator {
+    color: #dda15e;
+    padding: 0px 100px;
+    margin: 80px 0;
+    font-size: 50px;
+}
+
+p.seperator {
+    padding: 0px 100px;
+    margin-top: 40px;
+    font-size: 20px;
+    color: #777;
+}
+
+.Market {
+    padding: 0px 100px;
+    margin: 50px 0 80px;
+    ;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+
+.Market .items .header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.Market .items .header i {
+    font-size: 40px;
+}
+
+.Market .items .header h5 {
+    font-size: 17px;
+}
+
+.Market .items .header p {
+    padding: 0px 4px;
+    margin-top: 10px;
+}
+
+.Market .items,
+.nutShop .shopList .shopItems {
+    padding: 20px 20px 20px 20px;
+    background-color: white;
+    border-radius: 18px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    transition: all 1s ease;
+
+}
+
+.Market .items:hover,
+.nutShop .shopList:hover {
+    box-shadow: none;
+}
+
+.nutShop {
+    padding: 0px 100px;
+    margin-top: 30px;
+
+}
+
+.nutShop .category {
+    display: flex;
+    gap: 20px;
+}
+
+.nutShop .category a {
+    background-color: #dda15e;
+    padding: 8px 14px;
+    margin-bottom: 40px;
+    border-radius: 20px;
+    transition: all 0.5s ease;
+}
+
+.nutShop .category a:hover {
+    color: white;
+}
+
+
+.nutShop .shopList {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+
+.nutShop .shopList .shopItems img {
+    width: 280px;
+    height: 280px;
+    border-radius: 18px;
+}
+
+
+.nutShop .shopList .shopItems .info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 12px 0px;
+    border-top: 1px solid #ddd;
+}
+
+.nutShop .shopList .shopItems .info h5 {
+    font-size: 20px;
+    color: #8B5E3C;
+}
+
+.nutShop .shopList .shopItems .info p {
+    font-size: 15px;
+    color: #777;
+    margin: 4px 0px;
+}
+
+.nutShop .shopList .shopItems .info .price {
+    font-size: 20px;
+    color: red;
+    font-weight: bold;
+}
+
+.nutShop .shopList .shopItems .info .toCart {
+    background-color: #dda15e;
+    padding: 8px 14px;
+    border-radius: 18px;
+    margin: 20px 0 0 4px;
+    transition: all 0.5s ease;
+    color: white;
+}
+
+.nutShop .shopList .shopItems .info .toCart a {
+    color: white;
+}
+
+.nutShop .shopList .shopItems .info .toCart:hover {
+    background-color: #8B5E3C;
+}
+
+
+
+.viewMore{
+    margin: 50px 0 80px;
+    display: flex;
+    justify-content: center;
+}
+.viewMore button{
+    padding: 10px 12px;
+    margin: 50px 0 80px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 18px;
+    font-size: 15px;
+    ;
+}
+
+.viewMore button:hover{
+    background-color: #777;
+    color: white;
+    transition: all 0.5s ease;
+}
+
+.aboutUs{
+    padding: 0px 100px;
+    margin: 50px 0 80px;
+    display: flex;
+    justify-self: flex-end;
+}
+
+.aboutUs .right{
+    flex-direction: column;
+    width: 700px;
+    display: flex;
+
+}
+
+.aboutUs img{
+    width: 500px;
+    height: 500px;
+    border-radius: 18px;
+    margin-right: 200px;
+    
+}
+
+.aboutUs .right h2{
+    font-size: 40px;
+    color:black;
+
+}
+
+.aboutUs .right p{
+    font-size: 20px;
+    color: #777;
+    margin: 20px 0 40px;
+}
+
+footer{
+    padding: 100px 80px;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    background-color: #8B5E3C;
+    color: white;
+}
+
+footer h3{
+    font-size: 50px;
+}
+
+footer .right{
+    width:70%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 26px;
+}
+
+footer .right .links{  
+
+    gap: 20px;
+    display: flex;
+    
+}
+footer .right .links a{
+    color: white;
+    font-size: 25px;
+}
+
+footer .right .links a:hover{
+    color: #777;
+    transition: all 0.5s ease;
+}
+
+
+
+footer .right .email{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    
+    font-size: 16px;
+}
+footer .right .media{
+    font-size: 30px;
+    display: flex;
+    gap: 20px;
+    
+}
+footer .right .copyright{
+    font-size: 16px;
+    color: #faedcd;
+}
+
